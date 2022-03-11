@@ -500,6 +500,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	view_size = new(src, getScreenSize(prefs.widescreenpref))
 	view_size.resetFormat()
 	view_size.setZoomMode()
+	AssertStatusbar(FALSE)
 	fit_viewport()
 	Master.UpdateTickRate()
 

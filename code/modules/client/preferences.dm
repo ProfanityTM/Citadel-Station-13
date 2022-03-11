@@ -2754,6 +2754,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						outline_color = pickedOutlineColor // nullable
 				if("screentip_pref")
 					screentip_pref = !screentip_pref
+					parent.AssertStatusbar(TRUE)
 				if("screentip_color")
 					var/pickedScreentipColor = input(user, "Choose your screentip color.", "General Preference", screentip_color) as color|null
 					if(pickedScreentipColor)
